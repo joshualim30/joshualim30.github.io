@@ -17,13 +17,343 @@
         <!-- CSS -->
         <link rel="stylesheet" href="./src/css/style.css">
 
-        <!-- Scripts -->
-        <script src="./src/js/script.js" defer></script>
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     </head>
 
     <body>
 
-        <h1>Joshua Lim</h1>
+        <!-- Progress Bar -->
+        <div class="progressBar"></div>
+
+        <!-- Section Nav -->
+        <div class="sectionNav">
+
+            <!-- Hero -->
+            <a id="heroNav" href="#hero" onclick="sectionNavActive('#hero');">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+            </a>
+
+            <!-- Resume -->
+            <a id="resumeNav" href="#resume" onclick="sectionNavActive('#resume');">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+            </a>
+
+            <!-- Skills -->
+            <a id="skillsNav" href="#skills" onclick="sectionNavActive('#skills');">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                </svg>
+            </a>
+
+            <!-- Testimonials -->
+            <a id="testimonialsNav" href="#testimonials" onclick="sectionNavActive('#testimonials');">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+            </a>
+
+            <!-- Contact -->
+            <a id="contactNav" href="#contact" onclick="sectionNavActive('#contact');">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+            </a>
+
+        </div>
+
+        <!-- Main -->
+        <main id="main">
+
+            <!-- Hero -->
+            <section id="hero" class="hero">
+                <div class="heroContent">
+
+                    <!-- Profile Picture -->
+                    <img src="./src/images/joshua.jpg" class="heroContentImg" alt="Profile Picture">
+
+                    <!-- Name -->
+                    <h1>Joshua Lim</h1>
+
+                    <!-- Title -->
+                    <p>Software Developer</p>
+
+                    <br />
+
+                    <!-- Action Button -->
+                    <a href="#resume" class="btn">About Me</a>
+
+                </div>
+            </section>
+            
+            <!-- Resume -->
+            <section id="resume" class="resume">
+                <div class="resumeContent">
+                    <h1>Resume</h1>
+                    <div class="resumeContainer">
+                        <div class="resume-item">
+                            <h2>Education</h2>
+                            <div class="resume-itemContent">
+                                <h3>University of Central Florida</h3>
+                                <h4>Computer Science</h4>
+                                <p>August 2021 - Present</p>
+                            </div>
+                        </div>
+                        <div class="resume-item">
+                            <h2>Experience</h2>
+                            <div class="resume-itemContent">
+                                <h3>Software Developer</h3>
+                                <h4>Freelance</h4>
+                                <p>June 2021 - Present</p>
+                            </div>
+                        </div>
+                        <div class="resume-item">
+                            <h2>Skills</h2>
+                            <div class="resume-itemContent">
+                                <h3>Programming Languages</h3>
+                                <p>HTML, CSS, JavaScript, PHP, Java, C#, C++, Python, SQL</p>
+                                <h3>Frameworks</h3>
+                                <p>Bootstrap, jQuery, Node.js, Express.js, React.js, Angular, .NET, ASP.NET, Flask, Django</p>
+                                <h3>Databases</h3>
+                                <p>MySQL, MongoDB</p>
+                                <h3>Tools</h3>
+                                <p>Git, GitHub, VS Code, Visual Studio, IntelliJ IDEA, PyCharm, Eclipse, Android Studio, Postman, Heroku, Netlify, Firebase, AWS</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Skills -->
+            <section id="skills" class="skills">
+                <div class="skillsContent">
+                    <h1>Skills</h1>
+                    <div class="skillsContainer">
+                        <div class="skills-item">
+                            <h2>HTML</h2>
+                            <div class="skills-itemContent">
+                                <div class="skills-item-bar">
+                                    <div class="skills-item-bar-fill" style="width: 90%;"></div>
+                                </div>
+                                <p>90%</p>
+                            </div>
+                        </div>
+                        <div class="skills-item">
+                            <h2>CSS</h2>
+                            <div class="skills-itemContent">
+                                <div class="skills-item-bar">
+                                    <div class="skills-item-bar-fill" style="width: 90%;"></div>
+                                </div>
+                                <p>90%</p>
+                            </div>
+                        </div>
+                        <div class="skills-item">
+                            <h2>JavaScript</h2>
+                            <div class="skills-itemContent">
+                                <div class="skills-item-bar">
+                                    <div class="skills-item-bar-fill" style="width: 90%;"></div>
+                                </div>
+                                <p>90%</p>
+                            </div>
+                        </div>
+                        <div class="skills-item">
+                            <h2>PHP</h2>
+                            <div class="skills-itemContent">
+                                <div class="skills-item-bar">
+                                    <div class="skills-item-bar-fill" style="width: 90%;"></div>
+                                </div>
+                                <p>90%</p>
+                            </div>
+                        </div>
+                        <div class="skills-item">
+                            <h2>Java</h2>
+                            <div class="skills-itemContent">
+                                <div class="skills-item-bar">
+                                    <div class="skills-item-bar-fill" style="width: 90%;"></div>
+                                </div>
+                                <p>90%</p>
+                            </div>
+                        </div>
+                        <div class="skills-item">
+                            <h2>C#</h2>
+                            <div class="skills-itemContent">
+                                <div class="skills-item-bar">
+                                    <div class="skills-item-bar-fill" style="width: 90%;"></div>
+                                </div>
+                                <p>90%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Testimonials -->
+            <section id="testimonials" class="testimonials">
+                <div class="testimonialsContent">
+                    <h1>Testimonials</h1>
+                    <div class="testimonialsContainer">
+                        <div class="testimonials-item">
+                            <div class="testimonials-itemContent">
+                                <p>Joshua is a very talented developer. He is very knowledgeable in many different programming languages and frameworks. He is also very easy to work with and is very responsive. I would highly recommend him for any project.</p>
+                                <h3>Michael</h3>
+                                <h4>CEO of Company</h4>
+                            </div>
+                        </div>
+                        <div class="testimonials-item">
+                            <div class="testimonials-itemContent">
+                                <p>Joshua is a very talented developer. He is very knowledgeable in many different programming languages and frameworks. He is also very easy to work with and is very responsive. I would highly recommend him for any project.</p>
+                                <h3>Michael</h3>
+                                <h4>CEO of Company</h4>
+                            </div>
+                        </div>
+                        <div class="testimonials-item">
+                            <div class="testimonials-itemContent">
+                                <p>Joshua is a very talented developer. He is very knowledgeable in many different programming languages and frameworks. He is also very easy to work with and is very responsive. I would highly recommend him for any project.</p>
+                                <h3>Michael</h3>
+                                <h4>CEO of Company</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Contact -->
+            <section id="contact" class="contact">
+                <div class="contactContent">
+                    <h1>Contact</h1>
+                    <div class="contactContainer">
+                        <div class="contact-item">
+                            <h2>Phone</h2>
+                            <div class="contact-itemContent">
+                                <p>(937) 707-3022</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <h2>Email</h2>
+                            <div class="contact-itemContent">
+                                <p>
+                                    <a href="mailto:joshualim@creatingreal.com" target="_blank" rel="noopener noreferrer">joshualim@creatingreal.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <h2>Location</h2>
+                            <div class="contact-itemContent">
+                                <p>Orlando, FL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer id="footer" class="footer">
+            <div class="footerContent">
+                <p>&copy; 2021 Joshua Lim</p>
+            </div>
+        </footer>
 
     </body>
+
+    <!-- Scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+
+        // On load, set active section
+        window.onload = () => {
+            sectionNavActive('#hero');
+        };
+
+        // Smooth Scroll
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 500);
+                        return false;
+                    }
+                }
+            });
+        });
+        
+        // Progress Bar
+        const progressBar = document.querySelector('.progressBar');
+        const section = document.getElementById('main');
+
+        const scrollProgressBar = () => {
+
+            let scrollDistance = -(section.getBoundingClientRect().top);
+            let progressPercentage =
+                (scrollDistance /
+                    (section.getBoundingClientRect().height -
+                        document.documentElement.clientHeight)) * 100;
+
+            let val = Math.floor(progressPercentage);
+            progressBar.style.width = val + '%';
+
+            if (val < 0) {
+                progressBar.style.width = '0%';
+            } else if (val > 100) {
+                progressBar.style.width = '100%';
+            }
+
+        };
+
+        window.addEventListener('scroll', scrollProgressBar);
+
+        // Section Nav
+        const sectionNav = document.querySelector('.sectionNav');
+        const sectionNavLinks = document.querySelectorAll('.sectionNav a');
+
+        const sectionNavActive = (sec) => {
+
+            let section = [document.getElementById('hero'), document.getElementById('resume'), document.getElementById('skills'), document.getElementById('testimonials'), document.getElementById('contact')];
+            let current = sec ?? '';
+
+            section.forEach((section) => {
+
+                let sectionTop = section.offsetTop;
+                let sectionHeight = section.clientHeight;
+
+                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+
+            });
+
+            sectionNavLinks.forEach((sectionNavLink) => {
+                sectionNavLink.classList.remove('active');
+                if (sectionNavLink.id == current + 'Nav') {
+                    sectionNavLink.classList.add('active');
+                }
+            });
+
+        };
+
+        // Listen for scroll
+        window.addEventListener('scroll', sectionNavActive);
+        
+    </script>
+
+</html>

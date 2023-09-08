@@ -1,0 +1,159 @@
+/* --- BEGIN HTML CLASSES --- */
+
+/* Body */
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding: 0px;
+}
+
+/* Sections */
+section {
+  height: 100vh;
+  padding: 15px;
+}
+
+/* Headers */
+h1 {
+  font: 900 3rem 'Montserrat', sans-serif;
+  margin: 1px 0px;
+}
+
+h2 {
+  font: 700 2.5rem 'Montserrat', sans-serif;
+  margin: 1px 0px;
+}
+
+h3 {
+  font: 500 2rem 'Montserrat', sans-serif;
+  margin: 1px 0px;
+}
+
+/* Paragraphs */
+p {
+  font: 400 1.5rem 'Montserrat', sans-serif;
+  margin: 1px 0px;
+}
+
+/* Footer */
+footer {
+  height: 5%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to right, #1316be, #46add3);
+  color: white;
+  padding: 0px 15px;
+}
+
+/* MARK: CUSTOM CLASSES */
+
+/* Progress Bar Class */
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  background: linear-gradient(to right, #1316be, #46add3);
+  width: 0%;
+  z-index: 100;
+  transition: width 0.25s ease-out;
+}
+
+/* Section Nav Class */
+@media screen and (max-width: 600px) {
+  .sectionNav {
+    display: none;
+  }
+}
+
+.sectionNav {
+  margin: 0px;
+  background-color: white;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  position: fixed;
+  align-items: center;
+  top: 50%;
+  right: 15px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.sectionNav a {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  color: #1316be;
+}
+
+.sectionNav a:hover {
+  background: #1316be;
+  color: white;
+  transition: background 0.25s ease-out;
+}
+
+.sectionNav a.active {
+  background: #1316be;
+  color: white;
+}
+
+.sectionNav a > svg {
+  margin: 0 auto;
+  display: block;
+}
+
+/* Custom Button Class */
+.btn {
+  text-decoration: none;
+  font: 500 1rem 'Montserrat', sans-serif;
+  border: none;
+  border-radius: 100px;
+  padding: 10px 20px;
+  background: #1316be;
+  color: white;
+  cursor: pointer;
+  transition: background 0.25s ease-out;
+}
+
+.btn:hover {
+  background: #46add3;
+  transition: background 0.25s ease-out;
+}
+
+/* Hero Class */
+.hero {
+  height: 100vh;
+  padding: 15px;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.heroContentImg {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  background: #1316be;
+  margin-bottom: 15px;
+}
+
+/* Resume Class */
+.resume {
+  height: 100vh;
+  padding: 15px;
+}
+
+.resumeContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
