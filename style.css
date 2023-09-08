@@ -8,7 +8,7 @@ body {
 
 /* Sections */
 section {
-  height: 100vh;
+  min-height: 100vh;
   padding: 15px;
 }
 
@@ -146,7 +146,7 @@ footer {
 
 /* Resume Class */
 .resume {
-  height: 100vh;
+  min-height: 100vh;
   padding: 15px;
 }
 
